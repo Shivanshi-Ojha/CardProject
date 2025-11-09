@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.dice{
+			width: 150px;
+			height: 150px;
+			position: relative;
+			perspective: 1400px;
+			margin: 90px auto;
+			border-radius: 10px;
+			transition: all 3s linear;
+			transform-style: preserve-3d;
+			perspective-origin: 50% 50%;
+		}
+		.position{
+			width: 150px;
+			height: 150px;
+			border: 1px solid;
+			border-radius: 10px;
+			font-size: 40px;
+			position: absolute;
+		}
+		.dice:hover{
+		transform:    rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+		}
+		.left{
+			background: ghostwhite;
+         transform: rotateY(-90deg) translateZ(75px);
+		}
+		.right{
+			background: ghostwhite;
+           transform: rotateY(90deg) translateZ(75px);
+		}
+		.top{
+			background: ghostwhite;
+         transform: rotateX(90deg) translateZ(75px);
+		}
+		.bottom{
+          background: ghostwhite;
+          transform: rotateX(-90deg) translateZ(75px);
+		}
+		.front{
+         background: ghostwhite;
+         transform:  translateZ(75px);
+		}
+		.back{
+          background: ghostwhite;
+          transform: rotateX(180deg) translateZ(50px);
+		}
+	 
+    .dot{
+    	width: 15px;
+    	height: 15px;
+    	border: 1px solid;
+    	border-radius: 50%;
+    	background: black;
+    	float: left;
+    	position: relative;
+    }
+   .dot1{
+   	margin: 45%;
+    }                            /*                                       top right bottom left*/
+    .dot2{
+   	margin: 40% 7% 17% 20%;
+   }
+   .dot3{
+   	margin: 45% 10% 10% 10%;
+   }
+   .dot4{
+   	margin: 30px 30px 10px 20px;
+   }
+   .dot5{
+   	margin: 10% 20% 10% 12%;
+      }
+   .dot6{
+   	margin: 10% 20px 10% 17%;
+   }
+	</style>
+</head>
+<body>
+<div class="dice">
+	<div class="position left">
+ <div class="dot dot1"></div>
+
+	</div>
+	<div class="position right">
+	 <div class="dot dot2"></div>
+      <div class="dot dot2"></div>
+
+	</div>
+	<div class="position top">
+	 <div class="dot dot3"></div>
+      <div class="dot dot3"></div>
+      <div class="dot dot3"></div>
+	</div>
+	<div class="position bottom">
+      <div class="dot dot4"></div>
+      <div class="dot dot4"></div>
+      <div class="dot dot4"></div>
+      <div class="dot dot4"></div>
+    </div>
+	<div class="position front">
+	 <div class="dot dot5"></div>
+      <div class="dot dot5"></div>
+      <div class="dot dot5"></div>
+      <div class="dot dot5"></div>
+      <div class="dot dot5"></div>
+
+	</div>
+	<div class="position back">
+      <div class="dot dot6"></div>
+      <div class="dot dot6"></div>
+      <div class="dot dot6"></div>
+      <div class="dot dot6"></div>
+      <div class="dot dot6"></div>
+      <div class="dot dot6"></div>
+ 
+ 	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     let ask=+prompt("what do you want 'Even' or 'Odd' list")
+    //     let start =+prompt("Enter starting no.")
+    //     let end =+prompt("Enter last no.")
+    //     if(ask.toLowercase() =="even" ){
+    //         for(even=start; even<=start; even++){
+    //             if(even%2==0){
+    //                 document.write(`${even}`)
+    //             }
+    //         }
+    //     }
+    // if(ask.toLowercase() =="odd" ){
+    //         for(even=start; even<=start; even++){
+    //             if(even%2!==0){
+    //                 document.write(`${even}`)
+    //             }
+    //         }
+    //     }
+
+
+let start =+prompt("Enter starting no.");
+let end =+prompt("Enter last no.");
+let secGuard =1;
+if(start>1){
+    for(let list =start; list<=end; list++){
+        for( let pit =2; pit< list; pit++){
+            secGuard=1;
+            if(list % pit ==0){
+                secGuard=0;
+                break;
+            }
+        }
+        console.log(secGuard)
+        if(secGuar==1){
+            document.write(`<b>${list} </b>`+"<br>")
+        }
+    }
+}else{
+    alert("invalid no.")
+}
+    </script>
+</body>
+</html>

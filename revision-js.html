@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// convert string to no.
+// way-1
+// let text =+"74"
+// console.log(text + 1)
+// console.log(typeof text)
+// way-2
+// let text ="74"
+// let changeINNumber = Number(text)
+// console.log(typeof changeINNumber)
+
+
+// convert number to string
+// way-1
+// let number = 15+""
+// console.log(typeof number)
+// way-2
+// let number =45
+// let chnageINStr = String(number)
+// console.log(typeof chnageINStr)
+
+// convert str to Boolean
+let isActive = "true"
+let changeBoolean = Boolean(isActive)
+console.log(typeof changeBoolean)
+console.log(typeof isActive)
+console.log("4"==4)
+// task
+
+// let num1 =+prompt("Enter first number");
+// let num2 =+prompt("Enter second no");
+// let sum = num1+num2;
+// let mul = num1*num2;
+// let div = num1/num2;
+// console.log(mul)
+// console.log(sum)
+// console.log(div)
+
+                                                              // 18-aug
+// && operator: if one condion is false then result is false (find false value )
+console.log(4>2 && 5<10 && 1>10)
+// || operator: if one condion is true then result is true (find true value )
+console.log(1>4 || 6>10 || 1<2)
+
+// task
+// let age =+prompt("Enter your age")
+// if(age>=18){
+//     let checkVoterId =+prompt("Do you have voter id")
+//     if (checkVoterId ="yes"){
+//         alert("you may proceed")
+//     }else{
+//         alert("firstly you should make your voter id")
+//     }
+//     let checkGender =+prompt("enter your gender")
+//     if(checkGender ="male"){
+//         alert("Go room no. 8")
+//     }else{
+//         alert("go room no. 9")
+//     }
+// }
+// else{
+//     alert(`you may come after ${18 -age} years`)
+// }
+                                                        //    19 - August
+//    let num =1;
+//    while(num<5){
+//     document.write(`<h1>helloo  everyone ${num}</h1>`)
+//     num++
+//    }
+
+// let num =11;
+// do{
+//   document.write(`<h1>helloo  everyone ${num}</h1>`)
+// }while (num<6) 
+
+// for (let num =1; num<=15; num++){
+//  document.write(`<h1>helloo  everyone ${num}</h1>`)    
+//    if(num==6){
+//     continue;
+//    }
+// //    document.write(`<h1>helloo  everyone ${num}</h1>`)
+// }   
+    
+                              // task 20-August
+                            // table  
+//  let num =+prompt("Enter num for table")
+// for(let x=1; x<=10; x++){
+//     document.write(`<h1>${num} x ${x} = ${num*x}</h1>`)
+// }
+                            //  make- star
+//  let x =+prompt("Enter for row") 
+//  for(let row=1; row<=x; row++){
+//     for(let col=1; col<=row; col++){
+//         document.write("*")
+//     }
+//     document.write("<br>")
+//  }              
+                            //  odd or Even   
+//  let num =+prompt("Enter no. to check even or odd")                                    
+//  if(num%2 ==0){
+//     document.write(`<h1>${num} is Even</h1>`)
+//  }else{
+//     document.write(`<h1>${num} is Odd</h1>`)
+//  }
+                           // prime check
+// let num =+prompt("Enter to check prime or not")
+// let secGaurd = 0
+// if(num>1){
+//     for(let pit=2; pit<num; pit++){
+//         if(num%pit==0){
+//             secGaurd =1
+//             break;
+//         }
+//     }
+//     if(secGaurd==0){
+//         document.write(`${num} is prime`)
+//     }
+//     else if(secGaurd==1){
+//         document.write(`${num} is not prime`)
+//     }
+//     else{
+//         alert("invalid")
+//     }
+// }                           
+                           // string manupulation
+// let text = "hello guys kaise ho aap sb dosto ok guys enjoy your self"
+// console.log(text.indexOf("guys",7))                           
+// console.log(text.lastIndexOf("guys",35))
+// let text = "        hello guys kaise ho aap sb dosto ok guys enjoy your self            "
+// let spaceFree = text.trim()
+// console.log(text.toUpperCase())
+// console.log(spaceFree)
+
+// let changeText = text.replace("guys", "shivanshi")
+// console.log(changeText)
+                                // 21-August
+// let ask  =+prompt("Enter list of odd/Even what you want ")
+// let start =+prompt("Enter starting number")
+// let end =+prompt("enter till you want the list")
+// if(ask=="even"){
+//     for(let even=start; even<=end; even++){
+//      if(even%2==0){
+//         document.write(`<b>${even}</b>`+"<br>")
+//      }
+//     }
+// }else if(ask="odd"){
+// for(let even=start; even<=end; even++){
+//      if(even%2!=0){
+//         document.write(`<b>${even}</b>`+"<br>")
+//      }
+//     }
+// }         
+// let ask  =+prompt("Enter list of odd/Even what you want ")
+// let start =+prompt("Enter starting of prime number")
+// let end =+prompt("enter till you want the list")
+// let secGaurd =1
+// if(start>1){
+// for(let numList=start; numList<=end;numList++){
+//     for(let pit=2;pit<numList;pit++){
+//     secGaurd=1
+//     if(numList%pit==0){
+//     secGaurd=0
+//     break
+//       }
+//     }
+//     console.log(numList)
+//     if (secGaurd==1){
+//         document.write(`<b>${numList}</b>`+"<br>")
+
+//     }
+// }
+// } else{
+// alert("please enter no. more than 1")
+// }         
+
+
+//  slice
+// let text ="hello dosto kasie hain aap sab"
+// console.log(text.slice(0,5))
+
+           // Array
+// let sad =4           
+// let happy = ["aaloo","poori","kheer","kachori","Gajar ka halwa","chhachh"]           
+// console.log(happy[0])
+// console.log(happy.length)
+// happy.push("Rasmalai")
+// let elm =happy.pop()
+// let elm =happy.unshift("kajukatli")
+// let elm= happy.splice(1,3)
+// console.log(elm)
+// console.log(happy)
+// happy.length =0
+// console.log(happy)
+
+// console.log(happy.indexOf("kachori"))
+// console.log(Array.isArray(sad))
+                         // convert array to string
+// let happy = ["aaloo","poori","kheer","kachori","Gajar ka halwa","chhachh"]           
+// let arrConStr = happy.join(" ")
+// console.log(arrConStr)
+// console.log(happy)
+                          // convert string to array
+// let convrtArr = arrConStr.split(" ")
+// console.log(convrtArr)
+
+                          // 22-August
+// NESTED ARRAY
+
+</script>
+</body>
+</html>

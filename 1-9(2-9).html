@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #parent{
+      height: 50vh;
+      border: 5px solid greenyellow;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!--  2-sep -->
+  <!-- <div class="parent"> -->
+  <!-- <div id="parent">
+    <h1 class="meri">Heloo I am H1...</h1>
+    <h1 class="meri">Heloo I am H2...</h1>
+    <h1 id="mai">Heloo I am H3...</h1>
+    <h1 class="meri">Heloo I am H4...</h1>
+    <h1>Heloo I am H5...</h1>
+    <h1>Heloo I am H6...</h1>
+  </div> -->
+
+    <div id="parent">
+   <h2> i am already here</h2>
+   <h2> i am already here</h2>
+   <h2> i am already here</h2>
+   <h2> i am already here</h2>
+     </div>
+  <script>
+    // let elm =document.getElementById("mai")
+    // let elm =document.getElementsByClassName("meri")
+    // let elm =document.getElementsByTagName("h1")
+    // let elm =document.querySelector(".parent #mai")
+    //  elm.innerHTML = "kuchh hua kya"
+    // for(let element of elm){
+    // element.innerHTML = "hiii"
+    // }
+
+
+    //  child to parent
+    // let child = document.getElementById("mai")
+    // let parent = child.parentElement
+    // console.log(parent)
+
+    // parent to child
+    // let parent = document.getElementById("parent")
+    // let fchild =  parent.firstElementChild
+    // let fchild =  parent.lastElementChild
+    // let fNextchild =  parent.firstElementChild.nextElementSibling
+    // let fNextchild =  parent.lastElementChild.previousElementSibling
+        //  fchild.innerHTML = "mai aya js ki side s"  
+        //  fNextchild.innerHTML = "mai aya js ki side s"  
+
+//     let parent = document.getElementById("parent")
+// // parent.innerHTML = "<h1> helloo</h1>"
+// // console.log(parent)
+
+
+
+
+    // implement h1 tag i div
+
+    let elm = document.getElementById("parent")
+    // let h1 =document.createElement("h1")
+    // let text = document.createTextNode("heyy  ggss")
+    // h1.appendChild(text)
+    // elm.appendChild(h1)
+
+
+    elm.insertAdjacentHTML("beforebegin","<h1>heloooooo</h1>")
+  </script>
+</body>
+
+</html>

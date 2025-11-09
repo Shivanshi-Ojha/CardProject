@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        table ,td{
+            border: 1px solid;
+        }
+        table{
+            margin: 10px auto;
+        }
+        table td{
+            width: 60px;
+            height: 60px;
+        }
+        table .bg-red{
+            background-color: red;
+        }
+        table .bg-green{
+            background-color: green;
+        }
+        table .bg-blue{
+            background-color:blue;
+        }
+        table .bg-yellow{
+            background-color: yellow;
+        }
+        table  .box{
+            width: 60px;
+            height: 60px;
+            border: 1px solid;
+            border-radius: 10px;
+            float: left;
+            margin: 20px 30px;
+            background-color: red;
+            box-sizing: border-box;
+        }
+         table  .box2{
+            width: 60px;
+            height: 60px;
+            border: 1px solid;
+            border-radius: 10px;
+            float: left;
+            margin: 20px 30px;
+            background-color: green;
+            box-sizing: border-box;
+        }
+        table  .box3{
+            width: 60px;
+            height: 60px;
+            border: 1px solid;
+            border-radius: 10px;
+            float: left;
+            margin: 20px 30px;
+            background-color: blue;
+            box-sizing: border-box;
+        }
+         table  .box4{
+            width: 60px;
+            height: 60px;
+            border: 1px solid;
+            border-radius: 10px;
+            float: left;
+            margin: 20px 30px;
+            background-color: yellow;
+            box-sizing: border-box;
+        }
+        table .center{
+            width: 0;
+            height: 0;
+            border: 90px solid green;
+             border-left: 90px solid red;
+             border-right: 90px solid yellow;
+             border-bottom: 90px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" cellspacing="0" cellpadding="0">
+           <!-- row 1 start -->
+        <tr>
+            <td class="bg-red"></td>
+            <td class="bg-red"></td>
+            <td class="bg-red"></td>
+            <td class="bg-red"></td>
+            <td class="bg-red"></td>
+            <td class="bg-red"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="bg-green"></td>
+            <td class="bg-green"></td>
+            <td class="bg-green"></td>
+            <td class="bg-green"></td>
+            <td class="bg-green"></td>
+            <td class="bg-green"></td>
+        </tr>
+        <!-- row 1 end -->
+         
+           <!-- row 2 start -->
+        <tr>
+            <td class="bg-red"></td>
+            <td colspan="4" rowspan="4">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </td>
+            <td class="bg-red"></td>
+            <td></td>
+            <td class="bg-green"></td>
+            <td class="bg-green"></td>
+            <td  class="bg-green"></td>
+            <td colspan="4" rowspan="4">
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+            </td>
+            <td  class="bg-green"></td>
+        </tr>
+        <!-- row 2 end -->
+         
+           <!-- row 3 start -->
+        <tr>
+            <td class="bg-red"></td>
+            <td class="bg-red"></td>
+            <td></td>
+            <td class="bg-green"></td>
+            <td></td>
+            <td class="bg-green"></td>
+            <td class="bg-green"></td>
+        </tr>
+        <!-- row 3 end -->
+         
+           <!-- row 4 start -->
+        <tr>
+            <td class="bg-red"></td>
+            <td class="bg-red"></td>
+            <td></td>
+            <td class="bg-green"></td>
+            <td></td>
+            <td class="bg-green"></td>
+            <td class="bg-green"></td>
+        </tr>
+        <!-- row 4 end -->
+         
+           <!-- row 5 start -->
+        <tr>
+            <td class="bg-red"></td>
+            <td class="bg-red"></td>
+            <td></td>
+            <td class="bg-green"></td>
+            <td></td>
+            <td class="bg-green"></td>
+            <td class="bg-green"></td>
+        </tr>
+        <!-- row 5 end -->
+         
+           <!-- row 6 start -->
+        <tr>
+            <td class="bg-red"></td>
+            <td class="bg-red"></td>
+            <td class="bg-red"></td>
+            <td class="bg-red"></td>
+            <td class="bg-red"></td>
+            <td class="bg-red"></td>
+            <td></td>
+            <td class="bg-green"></td>
+            <td></td>
+            <td class="bg-green"></td>
+            <td class="bg-green"></td>
+            <td class="bg-green"></td>
+            <td class="bg-green"></td>
+            <td class="bg-green"></td>
+            <td class="bg-green"></td>
+        </tr>
+        <!-- row 6 end -->
+         
+           <!-- row 7 start -->
+        <tr>
+            <td></td>
+            <td class="bg-red"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3" rowspan="3">
+                <div class="center"></div>
+            </td>
+            <td ></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <!-- row 7 end -->
+         
+           <!-- row 8 start -->
+        <tr>
+            <td></td>
+            <td class="bg-red"></td>
+            <td class="bg-red"></td>
+            <td class="bg-red"></td>
+            <td class="bg-red"></td>
+            <td class="bg-red"></td>
+            <td class="bg-yellow"></td>
+            <td class="bg-yellow"></td>
+            <td class="bg-yellow"></td>
+            <td class="bg-yellow"></td>
+            <td class="bg-yellow"></td>
+            <td></td>
+        </tr>
+        <!-- row 8 end -->
+         
+           <!-- row 9 start -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="bg-yellow"></td>
+            <td></td>
+        </tr>
+        <!-- row 9 end -->
+         
+           <!-- row 10 start -->
+        <tr>
+            <td class="bg-blue"></td>
+            <td class="bg-blue"></td>
+            <td class="bg-blue"></td>
+            <td class="bg-blue"></td>
+            <td class="bg-blue"></td>
+            <td class="bg-blue"></td>
+            <td ></td>
+            <td class="bg-blue"></td>
+            <td></td>
+            <td class="bg-yellow"></td>
+            <td class="bg-yellow"></td>
+            <td class="bg-yellow"></td>
+            <td class="bg-yellow"></td>
+            <td class="bg-yellow"></td>
+            <td class="bg-yellow"></td>
+        </tr>
+        <!-- row 10 end -->
+         
+           <!-- row 11 start -->
+        <tr>
+            <td class="bg-blue"></td>
+            <td colspan="4" rowspan="4">
+                <div class="box3"></div>
+                <div class="box3"></div>
+                <div class="box3"></div>
+                <div class="box3"></div>
+            </td>
+            <td class="bg-blue"></td>
+            <td></td>
+            <td  class="bg-blue"></td>
+            <td></td>
+            <td class="bg-yellow"></td>
+            <td colspan="4" rowspan="4">
+                <div class="box4"></div>
+                <div class="box4"></div>
+                <div class="box4"></div>
+                <div class="box4"></div>
+            </td>
+            <td class="bg-yellow"></td>
+        </tr>
+        <!-- row 11 end -->
+         
+           <!-- row 12 start -->
+        <tr>
+            <td class="bg-blue"></td>
+            <td class="bg-blue"></td>
+            <td></td>
+            <td class="bg-blue"></td>
+            <td></td>
+            <td class="bg-yellow"></td>
+            <td class="bg-yellow"></td>
+        </tr>
+        <!-- row 12 end -->
+         
+           <!-- row 13 start -->
+        <tr>
+            <td class="bg-blue"></td>
+            <td class="bg-blue"></td>
+            <td></td>
+            <td class="bg-blue"></td>
+            <td></td>
+            <td class="bg-yellow"></td>
+            <td class="bg-yellow"></td>
+        </tr>
+        <!-- row 13 end -->
+         
+           <!-- row 14 start -->
+        <tr>
+            <td class="bg-blue"></td>
+            <td class="bg-blue"></td>
+            <td class="bg-blue"></td>
+            <td class="bg-blue"</td>
+            <td></td>
+            <td class="bg-yellow"></td>
+            <td class="bg-yellow"></td>
+        </tr>
+        <!-- row 14 end -->
+         
+           <!-- row 15 start -->
+        <tr>
+            <td class="bg-blue"></td>
+            <td class="bg-blue"></td>
+            <td class="bg-blue"></td>
+            <td class="bg-blue"></td>
+            <td class="bg-blue"></td>
+            <td class="bg-blue"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="bg-yellow"></td>
+            <td class="bg-yellow"></td>
+            <td class="bg-yellow"></td>
+            <td class="bg-yellow"></td>
+            <td class="bg-yellow"></td>
+            <td class="bg-yellow"></td>
+        </tr>
+        <!-- row 15 end -->
+    </table>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #main {
+            width: 600px;
+            height: 500px;
+            border: 1px solid;
+            margin: 30px auto;
+        }
+
+        #main .inp {
+            width: inherit;
+            height: 50px;
+            font-size: 30px;
+        }
+
+        button {
+            width: 60px;
+            height: 40px;
+            border-radius: 10px;
+            position: relative;
+            top: calc(80%);
+            left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <input type="text" class="inp" placeholder="Enter text here!">
+        <button id="countBtn">Count Vowels</button>
+        <p>Vowel Count: <span id="result">0</span></p>
+        <button id="lenBtn">Get Length</button>
+        <p>Length: <span id="lengthResult">0</span></p>
+    </div>
+
+    </div>
+
+    <script>
+        let button = document.getElementById('countBtn');
+        let result = document.getElementById('result');
+
+        const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+        button.addEventListener('click', function () {
+            let str = inputField.value.toLowerCase();
+            let count = 0;
+
+            for (let char of str) {
+                if (vowels.includes(char)) {
+                    count++;
+                }
+            }
+            document.write(`<h1>no. of Vowels is: ${count} </h1>`)
+            // result.textContent = count;  // Show result in the page
+        });
+        let inputField = document.querySelector('.inp');
+        const btn = document.getElementById('lenBtn');
+        const result1 = document.getElementById('lengthResult');
+
+        button.addEventListener('click', function () {
+            const str = inputField.value;
+            const length = str.length;
+            document.write(`<h2>Length is: ${length} </h2>`)
+
+        });
+    </script>
+</body>
+
+</html>

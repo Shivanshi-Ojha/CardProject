@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 800px;
+            height: 600px;
+            margin: 10px auto;
+            border: 1px solid;
+            position: relative;
+        }
+        .main .name{
+            width: 70px;
+            height: 70px;
+            border: 1px solid;
+            position: absolute;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            line-height: 70px;
+            background-color: lightcoral;
+        }
+        .v{
+            animation: v 2s forwards ;
+        }
+        .i{
+            animation: i 2s forwards 2s;
+            top: calc(100% - 70px);
+            left: calc(100% - 70px);
+        }
+        .s{
+            animation: s 2s forwards 4s;
+           top: calc(100% - 70px);
+           left: 0;
+        }
+        .h{
+            animation: h 2s forwards 6s;
+           left: calc(100% - 70px);
+           top: 0;
+        }
+        .n{ 
+            animation: n 2s forwards 8s;
+            top: calc(50% - 35px);
+            left: 0;
+        }
+        .u1{
+            animation: u1 2s forwards 10s;
+            top: 0;
+            left: calc(50% - 35px);
+        }
+        .d{
+            animation: d 2s forwards 11s;
+            top: calc(50% - 35px);
+            left: calc(100% - 70px);
+        }
+        .u{
+            animation: u 2s forwards 12s;
+            top: 30%;
+            left: 70%;
+        }
+        .c{ 
+            animation: c 2s forwards 15s;
+            top: 70%;
+            left: 30%;
+        }
+        .a{
+            animation: a 2s forwards 16s;
+            left: 70%;
+            top: 70%;
+        }
+        .t{
+            animation: t 2s forwards 18s;
+            left: calc(50% - 35px);
+            top: calc(100% - 70px);
+        }
+        @keyframes v{
+            0%{
+               top: 0;
+               left: 0;
+            }
+            50%{
+               top: 0;
+               left: 25%;
+            }
+            100%{
+               top: 30%;
+               left: 25%;
+            }
+        }
+        @keyframes i{
+           0%{
+            top: calc(100% - 70px);
+            left: calc(100% - 70px);
+           }
+           50%{
+            top: calc(70% - 70px);
+            left: calc(100% - 70px);
+           }
+           75%{
+            top: calc(70% - 70px);
+            left: calc(35%);
+           }
+           100%{
+             top:calc(30%);
+             left: 35%;
+           }
+        }
+        @keyframes s{
+            0%{
+           top: calc(100% - 70px);
+           left: 0;
+            }
+            50%{
+              left: 0;
+              top: calc(70% - 70px);
+            }
+            75%{
+                top: calc(70% - 70px);
+                left: calc(45%);
+            }
+            100%{
+               left: calc(45%);
+               top: 30%;
+            }
+        }
+        @keyframes h{
+            0%{
+            left: calc(100% - 70px);
+           top: 0;
+            }
+            50%{
+                top: 0;
+                left: 55%;
+            }
+            100%{
+                top: 30%;
+               left: 55%;
+            }
+        }
+        @keyframes u{
+            0%{
+            top: 30%;
+            left: 70%;
+            }
+            100%{
+               left: calc(100% - 70px);
+               top: 30%;
+            }
+        }
+        @keyframes n{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="name v">V</div>
+		<div class="name i">I</div>
+		<div class="name s">S</div>
+		<div class="name h">H</div>
+		<div class="name n">N</div>
+		<div class="name u1">U</div>
+		<div class="name d">D</div>
+		<div class="name u">U</div>
+		<div class="name c">C</div>
+		<div class="name a">A</div>
+		<div class="name t">T</div>
+    </div>
+</body>
+</html>

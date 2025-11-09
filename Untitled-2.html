@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"  />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100%;
+            height: 60vh;
+        
+        }
+        .main .imgContainer{
+            width: 100%;
+            height: 60vh;
+            border: 1px solid red;
+            position: relative;
+            display: none;
+        }
+         h1{
+            width: 100%;
+            /* position: absolute; */
+            text-align: center;
+            /* bottom: 5px;
+            left: 0; */
+            color: #fff;
+            background-color: #615e5e4e;
+        }
+        .main img{
+            width: 100%;
+            height: 100%;
+        }
+        .main span{
+            width: 80px;
+            height: 80px;
+            border: 3px solid #fff;
+            font-size: 30px;
+            text-align: center;
+            line-height: 80px;
+            border-radius: 50%;
+            color: #fff;
+            position: absolute;
+            top: calc(50% - 40px);
+            left: 10px;
+        }
+        .main span:last-child{
+            left: calc(100% - 90px);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="imgContainer">
+            <img src="1.avif" alt="">
+            <h1>Slide 1</h1>
+        </div>
+        <div class="imgContainer">
+            <img src="2.avif" alt="">
+            <h1>Slide 2</h1>
+        </div>
+        <div class="imgContainer">
+            <img src="3.avif" alt="">
+            <h1>Slide 3</h1>
+        </div>
+        <div class="imgContainer">
+            <img src="4.avif" alt="">
+            <h1>Slide 4</h1>
+        </div>
+        <div class="imgContainer">
+            <img src="5.avif" alt="">
+            <h1>Slide 5</h1>
+        </div>
+        <div class="imgContainer">
+            <img src="6.avif" alt="">
+            <h1>Slide 6</h1>
+        </div>
+         <div class="imgContainer">
+            <img src="7.avif" alt="">
+            <h1>Slide 7</h1>
+        </div>
+        <span onclick="handleimg(-1)"><i class="fa-solid fa-less-than"></i>  </span>
+        <span onclick="handleimg(1)"><i class="fa-solid fa-greater-than"></i></span>
+    </div>
+    <script>
+        let imgNo = 0
+        function handleimg(x){
+            imgNo = imgNo + x
+            imageShow(imgNo)
+        }
+        imageShow(imgNo)
+
+
+        function imageShow(num){
+         let images =   document.getElementsByClassName("imgContainer")
+            if(num==images.length){
+                num=0
+                imgNo=0
+            }
+            if(num<0){
+                num=images.length - 1
+                imgNo=images.length - 1
+            }
+         for(let img of images){
+                img.style.display = "none"
+         }
+            images[num].style.display = "block"
+        }
+    </script>
+</body>
+</html>

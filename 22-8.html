@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let info =[
+        //     "shivi",//0
+        //     21,//1
+        //     7097765543,//2
+        //     [//3
+        //         "up",//3 0
+        //         [//3 1
+        //             "Pratapgarh",//3 1 0
+        //             [//3 1 1
+        //                 "salon",//3 1 1 0
+        //                 "Lalbag"//3 1 1 1
+        //             ]
+        //         ]
+        //     ]
+        // ]
+        // console.log(info[3][1][0])
+        // console.log(info)
+        // for(let elm of info){
+        //      if(Array.isArray(elm)){
+        //         for(let elm1 of elm){
+        //          if(Array.isArray(elm1)){
+        //             for(let elm2 of elm1){
+        //                 if(Array.isArray(elm2)){
+        //                     for(let elm3 of elm2){
+        //                         console.log(elm3)
+        //                     }
+        //                 }else{
+        //                 console.log(elm2)
+        //                 }
+        //             }
+        //          }else{
+        //             console.log(elm1)
+        //          }
+        //         }
+        //      }
+        //     else{
+        //         console.log(elm)
+        //     }
+        // }
+
+
+        // function sum(a,b,c){
+        //     console.log(a+b+c)
+        // }
+        // sum(11,33)
+        // sum(233,44)
+
+        function sum(){
+            let res =0
+            for(let elm of arguments){
+                res =res+elm
+            }
+            console.log(res)
+        }
+        sum(444,66,66)
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .arrow {
+            height: 150px;
+            cursor: pointer;
+        }
+
+        .left {
+            transform: rotate(180deg);
+        }
+
+        .frame {
+            width: 600px;
+            height: 700px;
+            overflow: hidden;
+            box-shadow: -10px 10px 10px black;
+        }
+
+        .slider {
+            display: flex;
+            transition: all 1s ease;
+        }
+
+        .slider .slideBox {
+            width: 600px;
+            height: 700px;
+            box-sizing: border-box;
+        }
+
+        .slider .slideBox h1 {
+            width: 100px;
+            height: 30px;
+            color: white;
+            background-color: black;
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- //right -->
+        <img src="arrrow.png" class="arrow left">
+        <div class="frame">
+            <div class="slider">
+                <img src="C:\Users\wi10\Pictures\Camera Roll\Screenshot_20250517-111652.PNG " class="image">
+                <img src="C:\Users\wi10\Pictures\Camera Roll\Screenshot_20250517-111717.PNG " class="image">
+                <img src="C:\Users\wi10\Pictures\Camera Roll\Screenshot_20250222-113106.PNG " class="image">
+                <img src="C:\Users\wi10\Pictures\Camera Roll\Screenshot_20250222-110607.PNG " class="image">
+                <img src="C:\Users\wi10\Pictures\Camera Roll\Screenshot_20250517-111652.PNG " class="image">
+                <img src="C:\Users\wi10\Pictures\Camera Roll\Screenshot_20250415-155736.JPG " class="image">
+                <img src="C:\Users\wi10\Pictures\Camera Roll\Screenshot_20250415-155653.JPG " class="image">
+                <img src="C:\Users\wi10\Pictures\Camera Roll\Screenshot_20250517-111717.PNG " class="image">
+            </div><!--//silder -->
+        </div> <!--//frame -->
+        <img src="arrrow.png" class="arrrow right">
+        <!-- <p><span class="display"></span></p> -->
+    </div>
+    <script>
+        // let button = document.getElementsByClassName('display');
+        const left = document.querySelector('.left');
+        const right = document.querySelector('.right');
+        const slider = document.querySelector('.slider');
+        const images = document.querySelectorAll('.image')
+        // let display = document.querySelector(".display");
+        let slideKey = 1;
+        const length = images.length;
+
+        const nextSlide = function () {
+            slider.style.transform = `translateX(-${slideKey * 600}px)`;
+            slideKey++;
+        }
+        const preSlide = function () {
+            slider.style.transform = `translateX(-${(slideKey - 2) * 600}px)`;
+            slideKey--;
+        }
+        const getFirstSlide = function () {
+            slider.style.transform = `translateX(0px)`;
+            slideKey = 1;
+        }
+        const getLastSlide = function () {
+            slider.style.transform = `translateX(-${(length - 1) * 600}px)`;
+            slideKey = length;
+        }
+        right.addEventListener('click', function () {
+            if (slideKey < length) {
+                nextSlide();
+            }
+            else {
+                getFirstSlide();
+            }
+            // console.log('hello')
+        });
+        left.addEventListener('click', function () {
+            if (slideKey < length) {
+                preSlide();
+            }
+            else {
+                getLastSlide();
+            }
+            // console.log('hello')
+        });
+
+
+    </script>
+</body>
+
+</html>
